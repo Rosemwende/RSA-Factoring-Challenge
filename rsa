@@ -8,11 +8,11 @@ with open (argv[1]) as f:
         if num % 2 == 0:
             print("{}*2".format(num//2))
             continue
-            for i in range (3, num, 2):
-                if num % i == 0:
-                    factor = num//i
+        for i in range (3, num, 2):
+            if num % i == 0:
+                factor = num//i
                 for y in range(3, factor, 2):
                     if factor % y == 0 or y == 0:
                         break
-            print("{}*{}".format(factor, i))
-            break
+                print("{}*{}".format(factor, i))
+                break
